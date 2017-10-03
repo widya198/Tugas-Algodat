@@ -24,3 +24,4 @@ public class ChangeArrayLength {
         return changeLength1D(a, a.length, newLength);
     }
 }
+
