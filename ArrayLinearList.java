@@ -152,4 +152,28 @@ public class ArrayLinearList implements LinearList {
         }
         return size;
     }
+    
+    //coding soal no 9
+    @Override
+    public Object removeRange(int index, int index2) {
+        checkIndex(index);
+        checkIndex(index2);
+        if(index<index2){
+            for(int i = index2; i>=index; i--){
+                remove(i);
+            }
+        }
+        else{
+            System.out.println("index pertama harus lebih kecil dari index ke dua");
+        }
+        return element;
+    }
+
+    //coding soal no 12
+    @Override
+    public Object clone(Object[] a) {
+        a = new Object[size];
+        a = element.clone();
+        return toString();
+    }
 }
