@@ -1,9 +1,6 @@
 package no2sampai5;
 
-/**
- *
- * @author Fiki L
- */
+
 public abstract class LinearListAsAbstractClass {
     public abstract boolean isEmpty();
     public abstract int size();
