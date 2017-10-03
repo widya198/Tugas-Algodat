@@ -3,6 +3,7 @@ package no2sampai5;
 public class Main {
     public static void main(String[] args) {
         ArrayLinearList x = new ArrayLinearList(8);
+        Object[] cl = new Object[20];
         
         System.out.println("Ukuran awal x   : " +x.element.length);
         System.out.println("Apakah x kosong : " +x.isEmpty());
@@ -31,8 +32,12 @@ public class Main {
         x.add(9, 7);
         x.add(10, 8);
         
+        System.out.println("Setelah di clone ke Object F   : " +x.clone(cl));
+        System.out.println(x.size);
 //        System.out.println(x.size);
         System.out.println("\nIsi setelah ditambah 3 array baru : " +x.toString());
+        x.removeRange(0, 2);
+        
         System.out.println("Jumlah array sebelum dipotong     : " +x.element.length);
         x.trimToSize();
         System.out.println("Jumlah array setelah dipotong     : " +x.element.length);
